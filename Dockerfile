@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/windows/servercore:20H2
 
 # Install .NET Framework 4
-RUN powershell -Command "Install-WindowsFeature NET-Framework-452-Core"
+RUN powershell -Command "Install-WindowsFeature NET-Framework-Core"
 
 # Install Office 365 Interop Assemblies
 RUN powershell -Command "Install-Module -Name Microsoft365DSC"
